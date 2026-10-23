@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Harsh Badgujar — Portfolio</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sec{max-width:1100px;margin:0 auto;padding:88px 32px 0}
+.h2{margin:0;text-align:center;font-size:30px;font-weight:600}
+.sub{margin:4px 0 48px;text-align:center;font-size:14px;color:#5F5B7A}
+.card{background:#fff;border:1px solid #ECE9F8;border-radius:16px;padding:28px;box-shadow:0 8px 24px -16px rgba(60,40,160,.25);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -18px rgba(91,75,213,.45)}
+.chip{display:inline-block;padding:5px 12px;border-radius:999px;background:#F1EFFE;color:#4A3FB5;font-size:13px;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 26px;border-radius:10px;font-weight:500;font-size:15px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.p{background:#5B4BD5;color:#fff}
+.o{border:1.5px solid #5B4BD5;color:#5B4BD5}
+.nav a:hover{color:#5B4BD5}
+.in{width:100%;box-sizing:border-box;min-height:48px;padding:0 16px;border:1px solid #ECE9F8;border-radius:10px;background:#F1EFFE;font:inherit;font-size:14px;color:#25213B}
+.tl{border-left:2px solid #5B4BD5;padding:0 0 24px 24px;position:relative}
+.tl::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:#5B4BD5}
+.track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 24px}
+.track>.card{flex:0 0 340px;scroll-snap-align:start;padding:0;overflow:hidden;display:flex;flex-direction:column}
+.track>.card>div:last-child{flex:1;display:flex;flex-direction:column}
+.track>.card>div:last-child>div:last-child{margin-top:auto}
+.role{position:absolute;left:0;top:0;white-space:nowrap;opacity:0;animation:r3 9s infinite}
+@keyframes r3{0%,2%{opacity:0;transform:translateY(8px)}6%,30%{opacity:1;transform:none}34%,100%{opacity:0;transform:translateY(-8px)}}
+</style>
+</helmet>
+<div style="background:#FBFAFF;color:#25213B;font-family:'Poppins',system-ui,sans-serif;line-height:1.65">
+
+<!-- NAV -->
+<div style="max-width:1100px;margin:0 auto;padding:24px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="#home" style="font-weight:600;font-size:20px">Harsh</a>
+<div class="nav" style="display:flex;flex-wrap:wrap;gap:28px;font-size:14px;font-weight:500">
+<a href="#home" style="color:#5B4BD5">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#qualification">Qualification</a><a href="#cv">CV</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+</div>
+</div>
+
+<!-- HERO -->
+<div id="home" style="max-width:1100px;margin:0 auto;padding:56px 32px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:56px">
+<div style="display:flex;gap:28px;flex:1 1 440px">
+<div style="display:flex;flex-direction:column;gap:18px;color:#5B4BD5;padding-top:12px">
+<a href="https://github.com/harshbadgujar/" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i" viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2m12 4v-3.5c0-1 .1-1.4-.5-2 2.800-.3 5.500-1.400 5.500-6a4.600 4.600 0 00-1.300-3.200 4.200 4.200 0 00-.1-3.200s-1-.3-3.400 1.300a11.700 11.700 0 00-6 0C6.800 2.800 5.800 3.100 5.800 3.100a4.200 4.200 0 00-.1 3.200A4.600 4.600 0 004.400 9.500c0 4.600 2.700 5.700 5.500 6-.6.600-.6 1.200-.5 2V21"></path></svg></a>
+<a href="https://www.linkedin.com/in/harsh-badgujar/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"></path></svg></a>
+<a href="mailto:harshbadgujar1233@gmail.com" aria-label="Email"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></a>
+<a href="tel:+916353139453" aria-label="Phone"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"></path></svg></a>
+</div>
+<div>
+<span class="chip" style="background:#E6F7EE;color:#146C43">● Open to Opportunities</span>
+<h1 style="margin:16px 0 4px;font-size:40px;line-height:1.2;font-weight:600">Hi, I’m Harsh Badgujar</h1>
+<div style="position:relative;height:30px;font-size:18px;color:#5B4BD5;font-weight:500"><span class="role" style="animation-delay:0s">Full Stack Developer</span><span class="role" style="animation-delay:3s">React Developer</span><span class="role" style="animation-delay:6s">Laravel Developer</span></div>
+<p style="margin:12px 0 28px;max-width:420px;font-size:15px;color:#5F5B7A">A UI/UX-minded Laravel developer building modern, responsive, and user-friendly web applications with PHP, Laravel, React, MySQL, and WordPress.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn p" href="#contact">Contact Me →</a><button type="button" class="btn o" onClick="{{ downloadCv }}" style="background:transparent;cursor:pointer;font-family:inherit">Download CV</button></div>
+</div>
+</div>
+<div style="flex:0 1 340px;position:relative;width:340px;max-width:100%">
+<div style="position:absolute;inset:14px -14px -14px 14px;background:#5B4BD5;border-radius:63% 37% 54% 46% / 55% 48% 52% 45%"></div>
+<img src="./assets/cc36b8a9d554f58f2cf5a24c42fe72e3.jpg" alt="Portrait of Harsh Badgujar" style="position:relative;display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:63% 37% 54% 46% / 55% 48% 52% 45%">
+</div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="sec">
+<h2 class="h2">About Me</h2><p class="sub">My introduction</p>
+<div style="display:flex;flex-wrap:wrap;gap:56px;align-items:center;justify-content:center">
+<img src="./assets/cc36b8a9d554f58f2cf5a24c42fe72e3.jpg" alt="Harsh Badgujar" style="width:300px;max-width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:12px">
+<div style="flex:1 1 380px;max-width:520px">
+<p style="margin:0 0 16px;font-size:15px;color:#5F5B7A">B.E. Computer Engineering graduate with hands-on internship experience in PHP, Laravel, and WordPress. I build dynamic, responsive web applications using MVC architecture, REST APIs, and MySQL, with a focus on clean, maintainable code and user-friendly interfaces.</p>
+<div style="display:flex;flex-wrap:wrap;gap:36px;margin:24px 0 28px">
+<div><div style="font-size:24px;font-weight:600">8.47</div><div style="font-size:13px;color:#5F5B7A">B.E. CGPA</div></div>
+<div><div style="font-size:24px;font-weight:600">5</div><div style="font-size:13px;color:#5F5B7A">Featured projects</div></div>
+<div><div style="font-size:24px;font-weight:600">2026</div><div style="font-size:13px;color:#5F5B7A">Laravel internship</div></div>
+</div>
+<button type="button" class="btn p" onClick="{{ downloadCv }}" style="border:0;cursor:pointer;font-family:inherit">Download CV</button>
+</div>
+</div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="sec">
+<h2 class="h2">Skills</h2><p class="sub">My technical toolkit</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px">
+<div class="card"><h3 style="margin:0 0 14px;font-size:17px;color:#5B4BD5">Backend Development</h3><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">REST APIs</span><span class="chip">MVC Architecture</span><span class="chip">Authentication</span><span class="chip">CRUD Operations</span></div></div>
+<div class="card"><h3 style="margin:0 0 14px;font-size:17px;color:#5B4BD5">Frontend Development</h3><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Bootstrap</span><span class="chip">Responsive Design</span><span class="chip">AJAX &amp; jQuery</span></div></div>
+<div class="card"><h3 style="margin:0 0 14px;font-size:17px;color:#5B4BD5">Database</h3><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">MySQL</span><span class="chip">Database Design</span><span class="chip">SQL Queries</span></div></div>
+<div class="card"><h3 style="margin:0 0 14px;font-size:17px;color:#5B4BD5">CMS Development</h3><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">WordPress</span><span class="chip">Theme Customization</span><span class="chip">Plugin Integration</span><span class="chip">Website Management</span></div></div>
+<div class="card"><h3 style="margin:0 0 14px;font-size:17px;color:#5B4BD5">UI/UX Design</h3><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">UI Design Principles</span><span class="chip">Responsive Layouts</span><span class="chip">User-Friendly Interfaces</span></div></div>
+<div class="card"><h3 style="margin:0 0 14px;font-size:17px;color:#5B4BD5">Tools &amp; Integrations</h3><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip">Git &amp; GitHub</span><span class="chip">VS Code</span><span class="chip">Stripe &amp; PayPal (basics)</span></div></div>
+</div>
+</div>
+
+<!-- QUALIFICATION -->
+<div id="qualification" class="sec">
+<h2 class="h2">Qualification</h2><p class="sub">My personal journey</p>
+<div style="display:flex;flex-wrap:wrap;gap:48px;justify-content:center">
+<div style="flex:1 1 320px;max-width:440px">
+<h3 style="margin:0 0 20px;font-size:17px;color:#5B4BD5">Education</h3>
+<div class="tl"><div style="font-weight:600">B.E. in Computer Engineering</div><div style="font-size:14px;color:#5F5B7A">D A Degree Engineering and Technology, Mahemdabad</div><div style="font-size:13px;color:#5F5B7A">2022 – 2025 · CGPA 8.47 / 10</div></div>
+</div>
+<div style="flex:1 1 320px;max-width:440px">
+<h3 style="margin:0 0 20px;font-size:17px;color:#5B4BD5">Work</h3>
+<div class="tl"><div style="font-weight:600">PHP Laravel Developer</div><div style="font-size:14px;color:#5F5B7A">BM Coder InfoTech, Ahmedabad</div><div style="font-size:13px;color:#5F5B7A;margin-bottom:8px">Feb 2026 – Aug 2026</div><div style="font-size:14px;color:#5F5B7A">Built REST APIs, CRUD modules, authentication, and dashboards; integrated Stripe and PayPal for an e-commerce application.</div></div>
+</div>
+</div>
+</div>
+
+<!-- CV -->
+<div id="cv" class="sec">
+<h2 class="h2">My CV</h2><p class="sub">A quick look at my resume</p>
+<div class="card" style="max-width:860px;margin:0 auto;display:grid;gap:22px">
+<div><h3 style="margin:0 0 6px;font-size:17px;color:#5B4BD5">Summary</h3><p style="margin:0;font-size:14px;color:#5F5B7A">B.E. Computer Engineering graduate with hands-on internship experience in PHP, Laravel, and WordPress development. Skilled in building dynamic, responsive web applications using MVC architecture, REST APIs, and MySQL, with a focus on clean, maintainable code.</p></div>
+<div><h3 style="margin:0 0 8px;font-size:17px;color:#5B4BD5">Skills</h3><div style="display:grid;gap:6px;font-size:14px;color:#5F5B7A">
+<div><b style="color:#25213B">Languages:</b> PHP 8, JavaScript (ES6+), SQL, HTML5, CSS3</div>
+<div><b style="color:#25213B">Frameworks:</b> Laravel, React.js, Bootstrap, Blade, Eloquent ORM</div>
+<div><b style="color:#25213B">Databases:</b> MySQL, MongoDB, Schema Design, Migrations, Indexing</div>
+<div><b style="color:#25213B">Backend &amp; API:</b> REST APIs, JSON, Authentication, Middleware, RBAC, Stripe and PayPal, Queues, Cron Jobs</div>
+<div><b style="color:#25213B">Tools:</b> Git, GitHub, Composer, Postman, phpMyAdmin, VS Code, XAMPP/WAMP</div>
+<div><b style="color:#25213B">Concepts:</b> MVC, OOP, SOLID, Responsive Design, Agile/Scrum, SDLC</div>
+</div></div>
+<div><h3 style="margin:0 0 8px;font-size:17px;color:#5B4BD5">Experience</h3><div style="font-size:14px;color:#5F5B7A"><b style="color:#25213B">PHP Laravel Developer</b>, BM Coder InfoTech, Ahmedabad · Feb 2026 – Aug 2026<ul style="margin:8px 0 0;padding-left:20px;display:grid;gap:6px"><li>Developed modules of a production e-commerce application with PHP, Laravel, and MySQL under MVC architecture.</li><li>Designed RESTful API endpoints and standardized JSON responses and error handling.</li><li>Integrated Stripe and PayPal payment gateways with secure checkout.</li></ul></div></div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px"><button type="button" class="btn p" onClick="{{ downloadCv }}" style="border:0;cursor:pointer;font-family:inherit">Download full CV (PDF)</button><span style="font-size:13px;color:#5F5B7A">{{ cvMsg }}</span></div>
+</div>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="sec">
+<h2 class="h2">Services</h2><p class="sub">What I offer</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px">
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">PHP &amp; Laravel Development</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Robust backends built on Laravel and MVC principles.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M8 21h8"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">Custom Web Applications</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Web apps shaped around your workflow and users.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">React Frontend Development</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Interactive, component-based interfaces.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3 3 15 0 18"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">WordPress Websites</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Custom themes, plugins, and easy content management.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><path d="M14 6l4 4-8 8H6v-4z"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">Maintenance &amp; Bug Fixing</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Keeping your site running smoothly.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">Responsive UI Development</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Layouts that work on every screen size.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v10H4zM8 19h8M12 15v4"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">Basic UI/UX Improvements</h3><p style="margin:0;font-size:14px;color:#5F5B7A">Practical refinements for easier interfaces.</p></div>
+<div class="card"><div style="color:#5B4BD5"><svg class="i" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v12c0 1.700 3.600 3 8 3s8-1.300 8-3V6"></path></svg></div><h3 style="margin:10px 0 6px;font-size:16px">API &amp; Database Development</h3><p style="margin:0;font-size:14px;color:#5F5B7A">REST API integration and MySQL databases.</p></div>
+</div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio" class="sec">
+<h2 class="h2">Portfolio</h2><p class="sub">My most recent work · scroll sideways →</p>
+<div class="track">
+<div class="card"><div style="height:150px;background:#5B4BD5;color:#fff;display:flex;align-items:center;justify-content:center"><svg class="i" style="width:56px;height:56px;stroke-width:1.500" viewBox="0 0 24 24"><path d="M3 4h2l2 11h11l2-8H7"></path><circle cx="9" cy="19" r="1.500"></circle><circle cx="17" cy="19" r="1.500"></circle></svg></div><div style="padding:24px"><h3 style="margin:0 0 8px;font-size:18px">Smart-Cart — E-Commerce Web Application</h3><p style="margin:0 0 14px;font-size:14px;color:#5F5B7A">Customer and admin panels, product management, cart, checkout, order tracking, and authentication.</p><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px"><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">MySQL</span><span class="chip">Bootstrap</span><span class="chip">AJAX</span></div><div style="display:flex;gap:10px"><a class="btn p" href="#" style="min-height:42px;padding:0 18px">View Project</a><a class="btn o" href="https://github.com/harshbadgujar/" target="_blank" rel="noopener" style="min-height:42px;padding:0 18px">Source Code</a></div></div></div>
+<div class="card"><div style="height:150px;background:#7A6BE8;color:#fff;display:flex;align-items:center;justify-content:center"><svg class="i" style="width:56px;height:56px;stroke-width:1.500" viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"></path></svg></div><div style="padding:24px"><h3 style="margin:0 0 8px;font-size:18px">Stay-Ease — Hotel Management System</h3><p style="margin:0 0 14px;font-size:14px;color:#5F5B7A">Manages hotel information, bookings, customer records, and administrative operations.</p><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px"><span class="chip">Laravel</span><span class="chip">React</span><span class="chip">MySQL</span></div><div style="display:flex;gap:10px"><a class="btn p" href="#" style="min-height:42px;padding:0 18px">View Project</a><a class="btn o" href="https://github.com/harshbadgujar/" target="_blank" rel="noopener" style="min-height:42px;padding:0 18px">Source Code</a></div></div></div>
+<div class="card"><div style="height:150px;background:#5B4BD5;color:#fff;display:flex;align-items:center;justify-content:center"><svg class="i" style="width:56px;height:56px;stroke-width:1.500" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"></path></svg></div><div style="padding:24px"><h3 style="margin:0 0 8px;font-size:18px">Job Portal</h3><p style="margin:0 0 14px;font-size:14px;color:#5F5B7A">Job listings, job-related information, user interactions, and backend functionality.</p><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px"><span class="chip">Laravel</span><span class="chip">React</span><span class="chip">MySQL</span><span class="chip">REST APIs</span></div><div style="display:flex;gap:10px"><a class="btn p" href="#" style="min-height:42px;padding:0 18px">View Project</a><a class="btn o" href="https://github.com/harshbadgujar/" target="_blank" rel="noopener" style="min-height:42px;padding:0 18px">Source Code</a></div></div></div>
+<div class="card"><div style="height:150px;background:#7A6BE8;color:#fff;display:flex;align-items:center;justify-content:center"><svg class="i" style="width:56px;height:56px;stroke-width:1.500" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18"></path></svg></div><div style="padding:24px"><h3 style="margin:0 0 8px;font-size:18px">WordPress Website</h3><p style="margin:0 0 14px;font-size:14px;color:#5F5B7A">A customizable site focused on responsive design, content management, and a simple user experience.</p><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px"><span class="chip">WordPress</span><span class="chip">PHP</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div><div style="display:flex;gap:10px"><a class="btn p" href="#" style="min-height:42px;padding:0 18px">View Project</a><a class="btn o" href="https://github.com/harshbadgujar/" target="_blank" rel="noopener" style="min-height:42px;padding:0 18px">Source Code</a></div></div></div>
+<div class="card"><div style="height:150px;background:#5B4BD5;color:#fff;display:flex;align-items:center;justify-content:center"><svg class="i" style="width:56px;height:56px;stroke-width:1.500" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"></rect><path d="M10 7h4M10 11h4"></path></svg></div><div style="padding:24px"><h3 style="margin:0 0 8px;font-size:18px">UI/UX Concept — Travel Booking App</h3><p style="margin:0 0 14px;font-size:14px;color:#5F5B7A">A concept design exploring a clean booking flow from search to confirmation.</p><div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px"><span class="chip">UI Design</span><span class="chip">UX Flow</span><span class="chip">Wireframes</span></div><div style="display:flex;gap:10px"><a class="btn p" href="#" style="min-height:42px;padding:0 18px">View Case Study</a></div></div></div>
+</div>
+</div>
+
+<!-- CTA -->
+<div style="max-width:1100px;margin:48px auto 0;padding:0 32px">
+<div style="background:#5B4BD5;color:#fff;border-radius:16px;padding:44px 40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+<div><h2 style="margin:0 0 6px;font-size:26px;font-weight:600">Have a new project?</h2><p style="margin:0;font-size:15px;color:#E4E0FF">Tell me about it and let’s build it together.</p></div>
+<a class="btn" href="#contact" style="background:#fff;color:#4A3FB5">Contact Me →</a>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="sec">
+<h2 class="h2">Contact Me</h2><p class="sub">Get in touch</p>
+<div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:center">
+<div style="flex:1 1 280px;max-width:360px;display:grid;gap:16px;align-content:start">
+<div class="card" style="padding:20px"><div style="font-size:13px;color:#5F5B7A">Email</div><a href="mailto:harshbadgujar1233@gmail.com" style="font-weight:500;word-break:break-all">harshbadgujar1233@gmail.com</a></div>
+<div class="card" style="padding:20px"><div style="font-size:13px;color:#5F5B7A">Phone</div><a href="tel:+916353139453" style="font-weight:500">+91 63531 39453</a></div>
+<div class="card" style="padding:20px"><div style="font-size:13px;color:#5F5B7A">Location</div><div style="font-weight:500">Ahmedabad, Gujarat, India</div></div>
+<div class="card" style="padding:20px"><div style="font-size:13px;color:#5F5B7A">Profiles</div><div style="font-weight:500;display:grid;gap:4px;word-break:break-all"><a href="https://www.linkedin.com/in/harsh-badgujar" target="_blank" rel="noopener" style="color:#5B4BD5">linkedin.com/in/harsh-badgujar</a><a href="https://github.com/harshbadgujar/" target="_blank" rel="noopener" style="color:#5B4BD5">github.com/harshbadgujar</a></div></div>
+</div>
+<form action="mailto:harshbadgujar1233@gmail.com?subject=Portfolio%20enquiry" method="post" enctype="text/plain" style="flex:1 1 380px;max-width:520px;display:grid;gap:14px">
+<div style="display:flex;flex-wrap:wrap;gap:14px"><div style="flex:1 1 200px"><label for="n" style="font-size:13px;color:#5F5B7A">Name</label><input id="n" name="Name" class="in" placeholder="Your name" required=""></div><div style="flex:1 1 200px"><label for="e" style="font-size:13px;color:#5F5B7A">Email</label><input id="e" name="Email" type="email" class="in" placeholder="you@example.com" required=""></div></div>
+<div><label for="m" style="font-size:13px;color:#5F5B7A">Message</label><textarea id="m" name="Message" class="in" rows="5" style="padding:14px 16px;resize:vertical" placeholder="How can I help?" required=""></textarea></div>
+<div><button type="submit" class="btn p" style="border:0;cursor:pointer;font-family:inherit">Send Message</button></div>
+</form>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div style="margin-top:96px;background:#5B4BD5;color:#fff">
+<div style="max-width:1100px;margin:0 auto;padding:40px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<div><div style="font-size:20px;font-weight:600">Harsh Badgujar</div><div style="font-size:14px;color:#E4E0FF">Full Stack Developer</div></div>
+<div style="display:flex;flex-wrap:wrap;gap:24px;font-size:14px"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div>
+<div style="font-size:13px;color:#E4E0FF">© 2026 Harsh Badgujar</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4500}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+cvMsg: (this.state && this.state.cvMsg) || '',
+downloadCv: async () => {
+try {
+const url = './assets/7499151e8a961cdd85adac2cf9e9bf9f.pdf';
+const d = window.claude ? await window.claude.use('downloads') : null;
+if (d) {
+const blob = await (await fetch(url)).blob();
+await d.save({ filename: 'Harsh_Badgujar_Resume.pdf', data: blob });
+} else {
+this.setState({ cvMsg: 'Downloads are not available in this view. Open the shared portfolio link in your browser and try again.' });
+}
+} catch (e) {
+if (!e || e.code !== 'declined') this.setState({ cvMsg: 'Could not save the CV here. Please try the shared link in your browser.' });
+}
+}
+};
+}
+}
+</script>
+</body>
+</html>
